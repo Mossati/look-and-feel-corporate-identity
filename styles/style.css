@@ -345,11 +345,16 @@ form {
         padding: var(--padding-0-5);
         border: 0.2em solid var(--heading-1-color);
         margin-bottom: var(--margin-1);
+        outline: none;
     }
 
     & textarea {
         height: 10em;
         resize: none;
+    }
+
+    & input:focus, textarea:focus {
+        border: 0.2em solid var(--btn-color);
     }
 }
 
