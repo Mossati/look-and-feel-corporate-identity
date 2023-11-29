@@ -109,6 +109,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 5%;
+    line-height: 1.5;
 }
 
 article {
@@ -202,7 +203,7 @@ nav {
         }
 
         & ul {
-            display: flex;
+            display: flex;  
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
