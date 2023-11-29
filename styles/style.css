@@ -140,6 +140,7 @@ article {
 
 .scroll-top:hover {
     background-color: var(--heading-2-color);
+    transition: .4s ease;
 }
 
 /* hero img */
@@ -227,6 +228,7 @@ nav {
 
         & li a:hover {
             color: var(--btn-color);
+            transition: .4s ease;
         }
 
         & li .btn {
@@ -235,6 +237,7 @@ nav {
 
         & li .btn:hover {
             color: var(--btn-text-color);
+            transition: .4s ease;
         }
     }
 
@@ -366,6 +369,7 @@ form {
 
 .btn:hover {
     opacity: var(--opacity-0-75);
+    transition: .4s ease;
 }
 
 /* footer */
@@ -395,6 +399,7 @@ footer {
 
         & li a:hover {
             color: var(--btn-color);
+            transition: .4s ease;
         }
     }
     
