@@ -108,8 +108,9 @@ body {
     background-image: var(--background-image);
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 5%;
+    background-size: 4em;
     line-height: 1.5;
+    animation: rain 10s infinite linear;
 }
 
 article {
@@ -174,6 +175,7 @@ nav {
     top: 0;
     left: 0;
     width: var(--percentage-size-100);
+    transition: .4s ease;
 
     & .nav-bar {
         display: flex;
@@ -253,6 +255,10 @@ nav {
 .text-container {
     width: var(--percentage-size-50);
     margin-bottom: var(--margin-1);
+    background-color: var(--background-color);
+    border-radius: var(--border-size-1);
+    padding: var(--padding-1);
+    box-shadow: var(--box-shadow);
 }
 
 .section-flex {
@@ -292,6 +298,34 @@ nav {
     font-weight: var(--font-weight-600);
     margin-top: var(--margin-1);
     margin-bottom: var(--margin-1);
+}
+
+.carousel {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+    & .card {
+        width: 20em;
+        height: 20em;
+        margin-right: var(--margin-1);
+        scroll-snap-align: start;
+
+        & img {
+            width: var(--percentage-size-100);
+            height: auto;
+            border-radius: var(--border-size-1);
+            position: relative;
+        }
+
+        & div {
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+            z-index: 99;
+        }
+    }
 }
 
 /* headings */
@@ -430,6 +464,23 @@ footer {
     }
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--btn-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--heading-1-color);
+  }
+
 /* media queries */
 @media (max-width: 768px) {
     .text-container {
@@ -480,4 +531,9 @@ footer {
             }
         }
     }
+}
+
+@keyframes rain {
+    from {background-position: 0 0;}
+    to {background-position: 0 100%;}
 }
