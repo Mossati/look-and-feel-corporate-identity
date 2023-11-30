@@ -20,20 +20,7 @@ De live link vind je [hier](https://mossati.github.io/look-and-feel-corporate-id
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
-De HTML structtuur van de website is ingedeeld als volgt:
-* BODY
-*   HEADER
-*     NAV
-*     /NAV
-*   /HEADER
-*   ARTICLE
-*     SECTION
-*     /SECTION
-*   /ARTICLE
-*   FOOTER
-*   /FOOTER
-* /BODY
+De HTML structuur van de website bestaat uit een body met daarin een header, article en footer vervolgens zit in de article meerdere sections.
 
 Elk element bevat een deel van de website.
 * Body: de background image
@@ -41,6 +28,8 @@ Elk element bevat een deel van de website.
 * Article: de container voor de sections
 * Section: de container voor de tekst
 * Footer: de footer van de pagina
+
+De CSS bestaat uit veel custom properties die worden gebruikt door de hele code zodat je de pagina snel kan aanpassen.
 
 ## Bronnen
 De website maakt gebruik van icoontjes van fontawesome.
