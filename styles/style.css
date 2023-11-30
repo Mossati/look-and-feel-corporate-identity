@@ -301,8 +301,8 @@ nav {
 }
 
 .carousel {
+    display: none;
     scroll-snap-type: x mandatory;
-    display: flex;
     flex-direction: row;
     overflow-x: scroll;
 
