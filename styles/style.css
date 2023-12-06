@@ -110,7 +110,7 @@ body {
     background-attachment: fixed;
     background-size: 4em;
     line-height: 1.5;
-    animation: rain 20s infinite linear;
+    animation: rain 30s infinite linear;
 }
 
 article {
